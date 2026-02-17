@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 z-0"
         style={{
           backgroundImage: "url('/hero-bg.jpg')",
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center text-center">
-        
+
         {/* Animated Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-100 text-sm font-medium mb-8 backdrop-blur-sm animate-fade-in-up">
           <span className="relative flex h-2 w-2">
@@ -32,13 +32,13 @@ export default function Home() {
         <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 drop-shadow-lg">
           École Supérieure de <br className="hidden md:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-cyan-200">
-            Technologie Sidi Bennour
+            Technologie
           </span>
         </h1>
 
         {/* Subtitle */}
         <p className="mt-4 max-w-2xl text-lg md:text-xl text-blue-100 mb-10 leading-relaxed drop-shadow-md">
-          Bienvenue sur la plateforme officielle d'inscription. 
+          Bienvenue sur la plateforme officielle d'inscription.
           Gérez votre dossier académique et suivez votre parcours en toute simplicité.
         </p>
 

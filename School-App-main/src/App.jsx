@@ -14,6 +14,10 @@ import AgentLayout from './components/layout/AgentLayout'
 import AdminLayout from './components/layout/AdminLayout'
 import AgentDashboard from './pages/agent/Dashboard'
 import AdminDashboard from './pages/admin/Dashboard'
+import Majors from './pages/admin/Majors'
+import AcademicYears from './pages/admin/AcademicYears'
+import Users from './pages/admin/Users'
+import Settings from './pages/admin/Settings'
 
 function App() {
   return (
@@ -45,6 +49,10 @@ function App() {
             <Route element={<ProtectedRoute allowedRoles={['admin']} />}>
               <Route element={<AdminLayout />}>
                 <Route path="/admin/dashboard" element={<AdminDashboard />} />
+                <Route path="/admin/users" element={<Users />} />
+                <Route path="/admin/majors" element={<Majors />} />
+                <Route path="/admin/academic-years" element={<AcademicYears />} />
+                <Route path="/admin/settings" element={<Settings />} />
               </Route>
             </Route>
           </Routes>
